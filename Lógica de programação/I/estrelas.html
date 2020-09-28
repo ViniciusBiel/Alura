@@ -1,0 +1,54 @@
+<!-- <meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    for (var linha =1; linha <=3; linha++) {
+        for (var coluna = 1; coluna<=10; coluna++) {
+            document.write("*");
+        }
+        pulaLinha();
+    }
+
+
+</script> -->
+
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var totalDeEventos = parseInt(prompt("Informe o total de eventos"));
+
+    var contador = 1;
+
+    while(contador <= totalDeEventos) {
+
+        var totalGastoComEventos = 0;
+        var gasto = parseFloat(prompt("Informe total gasto com evento"));
+        totalGastoComEventos = totalGastoComEventos + gasto;
+        contador++;
+    }
+
+    var media = totalGastoComEventos / totalDeEventos;
+
+    mostra("A média de gastos é " + media);
+</script>
